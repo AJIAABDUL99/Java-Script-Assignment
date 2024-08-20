@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Visibility Example</title>
+</head>
+<body>
+    <div id="myDiv" style="width: 200px; height: 100px; background-color: lightblue;">
+        This is a div that can be toggled.
+    </div>
+    <button onclick="toggleVisibility()">Toggle Visibility</button>
+
+    <script>
+        // JavaScript function to toggle visibility
+        function toggleVisibility() {
+            var element = document.getElementById("myDiv");
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
